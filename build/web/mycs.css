@@ -1,0 +1,83 @@
+/** *************************************
+ * Class: CIST 2372 Java Programming II
+ * Spring: 2018
+ * Instructor: Ronald Enz
+ * Date: 06/18/2018
+ * Lab 
+ *My css class
+ * @author Levi Llewellyn *****************
+ */
+
+
+body {
+    background-color: #000000;
+    text-align: center;
+}
+header img {
+    
+}
+.wrapper {
+    padding: 20px 40px 0px 40px; 
+    background-color: white;
+}
+#main {
+    text-align: center;
+    color: dodgerblue;
+}
+.pic img {
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pic {
+    align-content: center;
+}
+#pic1 img {
+    width: 150px;
+    height:200px;
+}
+.pic1 {
+    align-content: center;
+}
+nav   { font-size: 20px;
+       text-align: center;
+       font-weight: bold;
+       width: 100%;
+       height: 100%;
+}
+
+nav li {display: inline;
+        margin-left: 20px;
+        
+}
+
+nav a {text-decoration: none;
+
+}
+
+.form {
+    padding-top: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: dodgerblue;
+    display: block;
+}
+
+.rus {
+    padding-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+   background-color: dodgerblue;
+    display: block;
+}
+.butt {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 75px;
+}
+
+.but{
+    width: 200px;
+}
