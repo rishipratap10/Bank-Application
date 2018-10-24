@@ -5,12 +5,14 @@ The customer would be able to:
 - Login 
 - View all his accounts and balances 
 
-### BackEnd 
-- SQL
-- JBDC API
-- Servlets
-- Business Objects
+### The BackEnd 
+- SQL for Query calls to the database
+- JBDC (API)
+- Servlets to respond to network requests
+- Business objects to handle the logic of the application
 
-### FrontEnd
-- Html 
-- Css
+### The Frontend
+- JSP to handle the GUI
+- HTML to format the web pages
+- CSS for styling
+
