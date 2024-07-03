@@ -24,7 +24,7 @@ public class AccountList {
     public void display() {
         for (int x = 0; x < count; x++) {
             alist[x].display();
-            System.out.println("-------------");
+           
         }
     }
     //testing main
