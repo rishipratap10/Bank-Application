@@ -76,13 +76,11 @@ public class Accounts {
         System.out.println("Your account user Id is: " + cid);
         System.out.println("Your account type is: " + type);
         System.out.println("Your account balance is: " + balance);
-        System.out.println("-------------------------------------");
     }
     //select database method
     public void selectDB(int actNo) {
         try {
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://"
-                    + "/Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
             Statement stmt = con.createStatement();
 
             String sql = "select * from Accounts WHERE AcctNo = " + actNo;
@@ -108,8 +106,7 @@ public class Accounts {
         
         //database connection
         try {
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://"
-                    + "/Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
 
             String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = " + getActNo();
             //System.out.println(sql);
@@ -130,8 +127,7 @@ public class Accounts {
          balance += with;
         
         try {
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://"
-                    + "/Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
 
             String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = " + getActNo();
             //System.out.println(sql);
