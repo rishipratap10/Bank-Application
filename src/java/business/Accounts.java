@@ -80,7 +80,7 @@ public class Accounts {
     //select database method
     public void selectDB(int actNo) {
         try {
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess:Users/Kiaito/Downloads/ChattBankMDB.mdb");
             Statement stmt = con.createStatement();
 
             String sql = "select * from Accounts WHERE AcctNo = " + actNo;
@@ -106,7 +106,7 @@ public class Accounts {
         
         //database connection
         try {
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess:Users/Kiaito/Downloads/ChattBankMDB.mdb");
 
             String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = 1222";
             //System.out.println(sql);
@@ -127,7 +127,7 @@ public class Accounts {
          balance += with;
         
         try {
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess:Users/Kiaito/Downloads/ChattBankMDB.mdb");
 
             String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = 1111";
             //System.out.println(sql);
