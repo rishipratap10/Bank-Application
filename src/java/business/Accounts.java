@@ -108,7 +108,7 @@ public class Accounts {
         try {
             Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
 
-            String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = " + getActNo();
+            String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = 1222";
             //System.out.println(sql);
             Statement stmt;
             stmt = con.createStatement();
@@ -129,7 +129,7 @@ public class Accounts {
         try {
             Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
 
-            String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = " + getActNo();
+            String sql = "UPDATE Accounts set Balance = " + balance + " WHERE AcctNo = 1111";
             //System.out.println(sql);
             Statement stmt;
             stmt = con.createStatement();
