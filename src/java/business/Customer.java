@@ -138,7 +138,7 @@ public class Customer {
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
             Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
             Statement stmt = con.createStatement();
-            String sql = "select AcctNo from Accounts where Cid= " + getcustId();
+            String sql = "select AcctNo from Accounts where Cid=custId";
             ResultSet rs = stmt.executeQuery(sql);
             Accounts a1;
             int acctNo;
