@@ -90,7 +90,7 @@ public class Customer {
     public void selectDB(int Id) {
         try {
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess:Users/Kiaito/Downloads/ChattBankMDB.mdb");
             Statement stmt = con.createStatement();
             String sql = "select * from Customers WHERE CustID = 123";
             ResultSet rs = stmt.executeQuery(sql);
@@ -112,7 +112,7 @@ public class Customer {
     public void deleteDB() {
         try {
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess:Users/Kiaito/Downloads/ChattBankMDB.mdb");
             String sql = "Delete from Customers WHERE id = 123";
             Statement stmt = con.createStatement();
             int n = stmt.executeUpdate(sql);
@@ -136,7 +136,7 @@ public class Customer {
     public void getAccount() {
         try {
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection con = DriverManager.getConnection("jdbc:ucanaccess://Users/Kiaito/Downloads/ChattBankMDB.mdb");
+            Connection con = DriverManager.getConnection("jdbc:ucanaccess:Users/Kiaito/Downloads/ChattBankMDB.mdb");
             Statement stmt = con.createStatement();
             String sql = "select AcctNo from Accounts where Cid=345";
             ResultSet rs = stmt.executeQuery(sql);
